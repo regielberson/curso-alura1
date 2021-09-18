@@ -1,0 +1,46 @@
+{
+  "name": "regielberson/buscador-bursos",
+  "description": "Projeto que busca os cursos no site da Alura",
+  "type": "library",
+
+  "authors": [
+    {
+      "name": "rlirio",
+       "email": "rlirio@supriservice.com.br"
+    }
+
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.3",
+    "symfony/dom-crawler": "^v4.4.30",
+    "symfony/css-selector": "^5.3",
+    "ext-http": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "./TesteMap.php"
+
+    ],
+
+    "psr-4": {
+       " ProjetoBuscador\\src\\" : "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.6",
+    "phan/phan": "^5.2"
+  },
+
+  "scripts": {
+    "Supriservice":  "  Empresa que me contratou.",
+     "test": " phpunit C:\\Users\\rlirio\\Buscador-Cursos\\Tests\\TestBuscadorDeCursos.php",
+      "cs": "phpcs --standard=PSR12 C:\\Users\\rlirio\\Buscador-Cursos\\buscar-cursos.php",
+
+    "check": [ "@test", "@cs"]
+  },
+
+  "scripts-descriptions": {
+    "check": "Faz a checagem do PHPUNIT e verificar os erros, menos o PHAN"
+  }
+}
