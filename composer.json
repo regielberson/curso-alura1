@@ -42,5 +42,7 @@
 
   "scripts-descriptions": {
     "check": "Faz a checagem do PHPUNIT e verificar os erros, menos o PHAN"
-  }
+  },
+  
+  "license": "GPL-3.0"
 }
